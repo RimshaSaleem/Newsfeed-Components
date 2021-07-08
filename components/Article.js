@@ -134,6 +134,9 @@ function articleMaker(article){
 
   // now addclasses
 
-  article_Div.classList.add('article', 'article-open' )
-
+  article_Div.classList.add('article', 'article-open')
+  date.classList.add('date')
+  firstParagraph.classList.add('firstParagraph')
+  secondParagraph.classList.add('secondParagraph')
+  thirdParagraph.classList.add('thirdParagraph')
 }
