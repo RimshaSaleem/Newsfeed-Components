@@ -117,12 +117,19 @@ const data = [
 const Articles = document.querySelector('.articles')
 function articleMaker(article){
   const article_Div = document.createElement('p');
-  const title = document.createElement('h2');
+  const title1 = document.createElement('h2');
   const date = document.createElement('p');
 
   const firstParagraph = document.createElement('p');
   const secondParagraph = document.createElement('p');
   const thirdParagraph = document.createElement('p');
   const expandButton = document.createElement('span');
+
+  article_Div.appendChild(title1)
+  article_Div.appendChild(date)
+  article_Div.appendChild(firstParagraph)
+  article_Div.appendChild(secondParagraph)
+  article_Div.appendChild(thirdParagraph)
+  article_Div.appendChild(expandButton)
 
 }
