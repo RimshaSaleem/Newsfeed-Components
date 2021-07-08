@@ -139,4 +139,5 @@ function articleMaker(article){
   firstParagraph.classList.add('firstParagraph')
   secondParagraph.classList.add('secondParagraph')
   thirdParagraph.classList.add('thirdParagraph')
+  expandButton.classList.add('expandButton')
 }
