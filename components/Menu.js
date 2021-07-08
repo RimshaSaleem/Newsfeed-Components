@@ -71,7 +71,17 @@ const menuList = document.querySelector('.header');
 const result = menuMaker(menuItems);
 menuList.appendChild(result);
 
+function buttonCreator(buttonText){
+  const button = document.createElement('button');
+  button.textContent = buttonText;
+  button.classList.add('custom');
+  button.addEventListener('click', (e) => {
+      console.log('click!');
+  });
+  return button;
+}
 
+let firstButton = buttonCreator('click bait');
 
 
 
