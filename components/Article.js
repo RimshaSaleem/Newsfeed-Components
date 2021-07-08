@@ -146,4 +146,5 @@ function articleMaker(article){
   firstParagraph.textContent = article.firstParagraph
   secondParagraph.textContent = article.secondParagraph
   thirdParagraph.textContent = article.thirdParagraph
+  expandButton.textContent = article.expandButton
 }
