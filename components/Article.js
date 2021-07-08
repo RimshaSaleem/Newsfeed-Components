@@ -140,4 +140,10 @@ function articleMaker(article){
   secondParagraph.classList.add('secondParagraph')
   thirdParagraph.classList.add('thirdParagraph')
   expandButton.classList.add('expandButton')
+
+  title1.textContent = article.title1
+  date.textContent = article.date
+  firstParagraph.textContent = article.firstParagraph
+  secondParagraph.textContent = article.secondParagraph
+  thirdParagraph.textContent = article.thirdParagraph
 }
