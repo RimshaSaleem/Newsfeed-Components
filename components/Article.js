@@ -132,4 +132,8 @@ function articleMaker(article){
   article_Div.appendChild(thirdParagraph)
   article_Div.appendChild(expandButton)
 
+  // now addclasses
+
+  article_Div.classList.add('article', 'article-open' )
+
 }
