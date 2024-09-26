@@ -32,6 +32,8 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 ### Part 1: The Articles Component
 
+
+
 * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.
 
 ### Part 2: Add Articles

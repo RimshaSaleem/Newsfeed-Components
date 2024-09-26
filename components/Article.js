@@ -114,3 +114,49 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+const articles = document.querySelector('.articles')
+function articleMaker(article){
+  const article_Div = document.createElement('p');
+  const title = document.createElement('h2');
+  const date = document.createElement('p');
+  const firstParagraph = document.createElement('p');
+  const secondParagraph = document.createElement('p');
+  const thirdParagraph = document.createElement('p');
+  const expandButton = document.createElement('span');
+
+//  append child
+  article_Div.appendChild(title);
+  article_Div.appendChild(date);
+  article_Div.appendChild(firstParagraph);
+  article_Div.appendChild(secondParagraph);
+  article_Div.appendChild(thirdParagraph);
+  article_Div.appendChild(expandButton);
+
+  
+  // add classes
+  article_Div.classList.add('article', 'article-open');
+  date.classList.add('date');
+  title.classList.add('title');
+  firstParagraph.classList.add('firstParagraph');
+  secondParagraph.classList.add('secondParagraph');
+  thirdParagraph.classList.add('thirdParagraph');
+  expandButton.classList.add('expandButton');
+
+  title.textContent = article.title;
+  date.textContent = article.date;
+  firstParagraph.textContent = article.firstParagraph;
+  secondParagraph.textContent = article.secondParagraph;
+  thirdParagraph.textContent = article.thirdParagraph;
+  expandButton.textContent = '+';
+
+expandButton.addEventListener('click', (event) =>{
+  article_Div.classList.toggle('article-open')
+})
+return article_Div;
+ }
+//  add loop
+data.forEach(results => {
+  const article_Div = articleMaker(results);
+  articles.appendChild(article_Div);
+})
+
